@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/monnet_dev/!svn/ver/2961/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang
+END
+Language.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/monnet_dev/!svn/ver/2961/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/Language.java
+END
+Region.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/monnet_dev/!svn/ver/2961/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/Region.java
+END
+Script.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/monnet_dev/!svn/ver/2961/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/Script.java
+END
+LanguageCodeFormatException.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/monnet_dev/!svn/ver/2961/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/LanguageCodeFormatException.java
+END
+packageinfo
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/monnet_dev/!svn/ver/2069/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/packageinfo
+END
+UnsupportedLanguageException.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/monnet_dev/!svn/ver/2961/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/UnsupportedLanguageException.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/monnet_dev/!svn/ver/2069/sources/trunk/eu.monnetproject.core/src/main/java/eu/monnetproject/lang/package.html
+END
