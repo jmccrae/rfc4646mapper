@@ -66,38 +66,38 @@ public class RFCMapperServlet extends HttpServlet {
 			"xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" "+ 
 			"xmlns:owl=\"http://www.w3.org/2002/07/owl#\" "+ 
 			"xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" "+ 
-			"xmlns:rfc4646=\""+prefix+"/prop/\" "+
+			"xmlns:ietflang=\""+prefix+"/prop/\" "+
 			"xmlns:lexvo=\"http://lexvo.org/ontology#\" " +
 			"xml:base=\""+prefix+"/\">");
 		out.println("  <rdf:Description rdf:about=\""+prefix+"/"+lang.toString()+"\">");
 		if(lang.getIso639_1() != null) {
-			out.println("    <rfc4646:iso639-1>" + lang.getIso639_1() + "</rfc4646:iso639-1>");
+			out.println("    <ietflang:iso639-1>" + lang.getIso639_1() + "</ietflang:iso639-1>");
 		}
 		if(lang.getIso639_2() != null) {
-			out.println("    <rfc4646:iso639-2>" + lang.getIso639_2() + "</rfc4646:iso639-2>");
+			out.println("    <ietflang:iso639-2>" + lang.getIso639_2() + "</ietflang:iso639-2>");
 		}
 		if(lang.getIso639_3() != null) {
-			out.println("    <rfc4646:iso639-3>" + lang.getIso639_3() + "</rfc4646:iso639-3>");
+			out.println("    <ietflang:iso639-3>" + lang.getIso639_3() + "</ietflang:iso639-3>");
 		}
 		if(lang.getScript() != null) {
-			out.println("    <rfc4646:iso15924-alpha4>" + lang.getScript().getAlpha4code() + "</rfc4646:iso15924-alpha4>");
-			out.println("    <rfc4646:iso15924-numeric>" + lang.getScript().getNumericCode() + "</rfc4646:iso15924-numeric>");
+			out.println("    <ietflang:iso15924-alpha4>" + lang.getScript().getAlpha4code() + "</ietflang:iso15924-alpha4>");
+			out.println("    <ietflang:iso15924-numeric>" + lang.getScript().getNumericCode() + "</ietflang:iso15924-numeric>");
 		}
 		if(lang.getRegion() != null) {
-			out.println("    <rfc4646:iso3166-alpha2>" + lang.getRegion().getAlpha2code() + "</rfc4646:iso3166-alpha2>");
-			out.println("    <rfc4646:iso3166-alpha3>" + lang.getRegion().getAlpha3code() + "</rfc4646:iso3166-alpha3>");
-			out.println("    <rfc4646:iso3166-numeric>" + lang.getRegion().getNumericCode() + "</rfc4646:iso3166-numeric>");
+			out.println("    <ietflang:iso3166-alpha2>" + lang.getRegion().getAlpha2code() + "</ietflang:iso3166-alpha2>");
+			out.println("    <ietflang:iso3166-alpha3>" + lang.getRegion().getAlpha3code() + "</ietflang:iso3166-alpha3>");
+			out.println("    <ietflang:iso3166-numeric>" + lang.getRegion().getNumericCode() + "</ietflang:iso3166-numeric>");
 			out.println("    <lexvo:usedIn rdf:resource=\"http://ontologi.es/place/" + lang.getRegion() + "\"/>");
 			out.println("    <lexvo:usedIn rdf:resource=\"http://www.lexvo.org/page/iso3166/" + lang.getRegion() + "\"/>");
 		}
 		for(String variant : lang.getVariants()) {
-			out.println("    <rfc4646:variant>"+variant+"</rfc4646:variant>");
+			out.println("    <ietflang:variant>"+variant+"</ietflang:variant>");
 		}
 		for(String extension : lang.getExtensions()) {
-			out.println("    <rfc4646:extension>"+extension+"</rfc4646:extension>");
+			out.println("    <ietflang:extension>"+extension+"</ietflang:extension>");
 		}
 		if(lang.getPrivateUse() != null) {
-			out.println("    <rfc4646:private-use>"+lang.getPrivateUse()+"</rfc4646:private-use>");
+			out.println("    <ietflang:private-use>"+lang.getPrivateUse()+"</ietflang:private-use>");
 		}
 		if(lang.getScript() == null && lang.getRegion() == null && lang.getVariants().isEmpty() && lang.getExtensions().isEmpty() && lang.getPrivateUse() == null) {
 			out.println("    <owl:sameAs rdf:resource=\"http://www.lexvo.org/page/iso639-3/" + lang.getIso639_3() + "\"/>");
@@ -137,9 +137,9 @@ public class RFCMapperServlet extends HttpServlet {
 		"iso639-3",
 		"iso15924-alpha4",
 		"iso15924-numeric",
-		"rfc4646:iso3166-alpha2",
-		"rfc4646:iso3166-alpha3",
-		"rfc4646:iso3166-numeric",
+		"iso3166-alpha2",
+		"iso3166-alpha3",
+		"iso3166-numeric",
 		"variant",
 		"extension",
 		"private-use" 
